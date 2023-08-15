@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function printHinhChuNhat() {
+    let a = +prompt('Nhập chiều dài', 10);
+    let b = +prompt('Nhập chiều rộng', 5);
+    let str = '';
+    for (let i = 0; i < b; i++) {
+        if (i === 0 || i === b - 1) {
+            for (let j = 0; j < a; j++) {
+                str += '*'
+            }
+        }
+    }
+}
+
+</script>
+</body>
+</html>

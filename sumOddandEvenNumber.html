@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Số nguyên dương A:")
+    let b = +prompt("Số nguyên dương B:")
+    let SumOdd = 0;
+    let SumEven = 0;
+    for (let i = a; i <= b ; i++) {
+        if( i % 2 === 0){
+            SumEven += i;
+        }else {
+            SumOdd += i;
+        }
+    }
+    console.log(SumOdd);
+    console.log(SumEven);
+</script>
+</body>
+</html>

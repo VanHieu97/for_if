@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a"> Số A!
+<br>
+<input type="text" id="b"> Số B!
+<br>
+<button onclick="multiply()"> Xem</button>
+<p id="multiply"></p>
+<script>
+    function multiply() {
+        let a = +document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let c = 1;
+        for (let i = a; i <= b;i++){
+            c *= i;
+            document.getElementById('multiply').innerHTML = c;
+        }
+    }
+</script>
+</body>
+</html>

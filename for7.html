@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="a"> Số A!
+<br>
+<input type="number" id="b"> Số B!
+<br>
+<button onclick="countNumber()">Xem!</button>
+<p id="x"></p>
+<script>
+    function countNumber() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let count = 0;
+        for (let i = a; i < b; i++) {
+            if (i % 5 === 2) {
+                    count+= 1;
+                }
+            }
+            document.getElementById('x').innerHTML = count;
+
+    }
+</script>
+</body>
+</html>

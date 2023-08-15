@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào số nguyên tố:");
+    let b = +prompt("Nhập số bội cần tìm: ");
+    let count = 0;
+    for (let i = a; i; i++){
+        if( i % a === 0){
+            count++;
+            console.log(i)
+        }
+        if( count === b){
+            break;
+        }
+    }
+</script>
+</body>
+</html>

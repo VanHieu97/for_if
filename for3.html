@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="a"> Số A.
+<input type="number" id="b"> Số B.
+<br>
+<button onclick="check()"> Xem KQ</button>
+
+<h1 id="N"></h1>
+<script>
+    function check() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let kq = ''
+        for (let i = a ; i < b ; i++) {
+            kq += "<h1>" + i + "</h1>"
+        }
+        document.getElementById('N').innerHTML = kq ;
+    }
+</script>
+</body>
+</html>
